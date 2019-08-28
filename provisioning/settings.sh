@@ -6,24 +6,24 @@
 export OKD_VERSION=3.11
 
 #OKD Master Node Configuration
-export OKD_MASTER_IP=100.10.10.100
-export OKD_MASTER_HOSTNAME=okd-master-node
+export OKD_MASTER_IP=192.168.2.90
+export OKD_MASTER_HOSTNAME=okd-master
 
 #OKD Worker Node 1 Configuration
-export OKD_WORKER_NODE_1_IP=100.10.10.101
-export OKD_WORKER_NODE_1_HOSTNAME=okd-worker-node-1
+export OKD_WORKER_NODE_1_IP=192.168.2.91
+export OKD_WORKER_NODE_1_HOSTNAME=okd-worker1
 
 #OKD Worker Node 2 Configuration
-export OKD_WORKER_NODE_2_IP=100.10.10.102
-export OKD_WORKER_NODE_2_HOSTNAME=okd-worker-node-2
+export OKD_WORKER_NODE_2_IP=192.168.2.92
+export OKD_WORKER_NODE_2_HOSTNAME=okd-worker2
 
 #OKD Worker Node 3 Configuration
-export OKD_WORKER_NODE_3_IP=100.10.10.103
-export OKD_WORKER_NODE_3_HOSTNAME=okd-worker-node-3
+export OKD_WORKER_NODE_3_IP=192.168.2.93
+export OKD_WORKER_NODE_3_HOSTNAME=okd-worker3
 
 #OKD Infra Node 1 Configuration
-export OKD_INFRA_NODE_1_IP=100.10.10.104
-export OKD_INFRA_NODE_1_HOSTNAME=okd-infra-node-1
+export OKD_INFRA_NODE_1_IP=192.168.2.89
+export OKD_INFRA_NODE_1_HOSTNAME=okd-infra
 
 #The  below setting will be used to access OKD console https://console.$DOMAIN:$API_PORT"
 #By default we can login using the URL https://console.okd.nip.io:8443
@@ -39,7 +39,7 @@ export OKD_PASSWORD=admin
 
 #OKD Add-Ons
 #Enable "True"  only if one of the VM has 4GB memory.
-export INSTALL_METRICS=False
+export INSTALL_METRICS=True
 
 # Enable "True"  only one of the VM 16GB memory. 
-export INSTALL_LOGGING=False
+export INSTALL_LOGGING=True
